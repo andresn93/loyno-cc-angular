@@ -1,1 +1,27 @@
-body { padding-top:30px; }
+body { padding-top:80px; }
+
+/*INDEX NAVBAR*/
+.navbar{
+		background-color: #620003;
+		color: #fff;
+		width: 100%;
+		padding: 15px 0;
+}
+
+.navbar-nav{
+	float: right;
+}
+
+
+.mainTitle {
+	color: #fff;
+}
+
+/*HOME PAGE / ADMINISTRATION */
+
+h1 {
+	font-weight: 100;
+}
+
+/*STORIES PAGE*/
+
