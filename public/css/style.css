@@ -1,11 +1,12 @@
 body { padding-top:80px; }
 
-/*INDEX NAVBAR*/
+/* INDEX NAVBAR */
 .navbar{
 		background-color: #620003;
 		color: #fff;
 		width: 100%;
 		padding: 15px 0;
+
 }
 
 .navbar-nav{
@@ -17,11 +18,41 @@ body { padding-top:80px; }
 	color: #fff;
 }
 
-/*HOME PAGE / ADMINISTRATION */
+/* HOME PAGE / ADMINISTRATION */
 
 h1 {
 	font-weight: 100;
 }
 
-/*STORIES PAGE*/
+/* END HOME PAGE */
+
+/* STORIES PAGE */
+
+	/* PROFILES */
+
+	#profile-story {
+		display: block;
+		margin-bottom: 40px;
+	}
+
+	.glyphicon-user {
+		width: 100px;
+		height: 100px;
+	}
+
+	/* END PROFILES */
+
+	/* ADD PROFILE SECTION */
+
+	.flexContainer {
+		display: flex;
+	}
+
+	.inputField {
+		flex: 2;
+	}
+
+
+
+
 
