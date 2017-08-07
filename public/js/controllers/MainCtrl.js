@@ -52,7 +52,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope, $ht
 				});
 
 	//POST DATES 
-				$scope.okDatesFunc = function(){
+				$scope.okCourseFunc = function(){
 					console.log($scope.courses.start);
 					console.log($scope.courses.end);
 					console.log($scope.courses.details);
