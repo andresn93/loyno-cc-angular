@@ -12,11 +12,11 @@ angular.module('StoriesCtrl', []).controller('StoriesController', function($scop
 					// console.log($scope.stories.picture);
 					// console.log($scope.stories.name);
 					// console.log($scope.stories.description);
-					console.log($scope.stories);
+					console.log($scope.newStory);
 
-						Stories.postNewProfile($scope.stories).then(function(response){
-							console.log($scope.stories);
-							$scope.stories = {};
+						Stories.postNewProfile($scope.newStory).then(function(response){
+							console.log($scope.newStory);
+							$scope.newStory = {};
 
 								Stories.getAllProfiles().then(function(response){
 								console.log(response.data);
