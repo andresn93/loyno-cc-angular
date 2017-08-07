@@ -1,0 +1,42 @@
+<!-- EXISTING DATES POPULATE-->
+	<div class="container dates-populate-container col-xs-6">
+		<h2>EDIT/DELETE EXISTING STORIES</h2>
+
+			<div class="container dates-container" id="dates-courses" ng-repeat="x in courses">
+				<div>{{x.start}}</div>
+				<div>{{x.end}}</div>
+				<div>{{x.details}}</div>
+			</div>
+				
+	</div>
+<!-- END EXISTING DATES -->
+
+<!--ADD DATES-->
+<div class="container form-container col-xs-6">
+	<h2>DATES EDITOR</h2>
+	<div class="form-group">
+		<label for="start-date">start date</label>
+		<input type="text" class="form-control" ng-model="courses.start" placeholder="type start date">
+	</div>
+
+	<div class="form-group">
+		<label for="end-date">end date</label>
+		<input type="text" class="form-control" ng-model="courses.end" placeholder="type end date">
+	</div>
+
+	<div class="form-group">
+		<label for="details">details</label>
+		<input type="text" class="form-control" ng-model="courses.details" placeholder="type details">
+	</div>
+
+	<!-- OK & REMOVE BUTTONS -->
+
+	<button type="submit" class="btn btn-default" ng-click="okCourseFunc()">save</button>
+
+<!-- 	<button type="button" class="btn btn-default">
+		<span class="glyphicon glyphicon-remove"></span>
+	</button> -->
+
+	<!-- BUTTONS END -->
+
+</div>
