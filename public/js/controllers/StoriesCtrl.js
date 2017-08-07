@@ -9,9 +9,10 @@ angular.module('StoriesCtrl', []).controller('StoriesController', function($scop
 				});
 	//POST NEW PROFILE
 				$scope.saveProfileFunc = function(){
-					console.log($scope.stories.picture);
-					console.log($scope.stories.name);
-					console.log($scope.stories.description);
+					// console.log($scope.stories.picture);
+					// console.log($scope.stories.name);
+					// console.log($scope.stories.description);
+					console.log($scope.stories);
 
 						Stories.postNewProfile($scope.stories).then(function(response){
 							console.log($scope.stories);

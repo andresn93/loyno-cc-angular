@@ -9,7 +9,7 @@ var URL = 'https://gentle-shore-39524.herokuapp.com';
 		},
 //POST A PROFILE
 		postNewProfile : function(data){
-			console.log(obj);
+			console.log(data);
 			return $http.post(URL + '/new-story', data)
 		},
 //DELETE A PROFILE
