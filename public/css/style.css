@@ -57,6 +57,13 @@ h1 {
 
 /* DATES PAGE */
 
+	/* DATES DISPLAY */
+
+	.dates-container {
+		display: block;
+		margin-bottom: 40px;
+	}
+
 
 
 
