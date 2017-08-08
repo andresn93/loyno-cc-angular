@@ -56,4 +56,26 @@ angular.module('DatesCtrl', []).controller('DatesController', function($scope, $
 				}
 
 
+	// CHANGE AVAILABLE
+
+				$scope.changeAvailable = function(data){
+					console.log(data);
+
+					var editDate = data;
+
+					if(data.available == true){
+						editDate.available = false;
+					}else{
+						editDate.available = true;
+					}
+
+					Dates.editDates(editDate).then(function(response){
+								console.log(response);
+								
+						});
+
+				}
+
 });
+
+

@@ -18,7 +18,11 @@ var URL = 'https://gentle-shore-39524.herokuapp.com';
 
 		applyDates   : function(unavObj){
 			return $http.post(URL + '/application-allowed', unavObj);
-		}
+		},
+
+		// editDates : function(data){
+		// 	return $http.post(URL + '/edit-course', data);
+		// }
 
 
 		   }
