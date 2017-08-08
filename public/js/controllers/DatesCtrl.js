@@ -26,7 +26,7 @@ angular.module('DatesCtrl', []).controller('DatesController', function($scope, $
 						});
 					});
 				}
-				
+
 	//DELETE DATES
 				$scope.delCourseFunc = function(obj){
 					console.log('ouch dates delete');
@@ -42,5 +42,18 @@ angular.module('DatesCtrl', []).controller('DatesController', function($scope, $
 						});
 					});
 				}
+
+	//UNAVAILABLE 
+				$scope.unavailableFunc = function(obj){
+					console.log('ouch unavailable');
+					console.log(obj);
+					var unavObj = {_id : obj};
+
+					Dates.applyDates().then(function(err, res){
+						if (err){console.log('delete error');}
+						else{console.log(res);}
+					});
+				}
+
 
 });

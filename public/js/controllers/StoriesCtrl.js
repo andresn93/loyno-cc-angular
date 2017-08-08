@@ -40,6 +40,31 @@ angular.module('StoriesCtrl', []).controller('StoriesController', function($scop
 								});
 						});
 				}
+	//EDIT PROFILE 
+		//SELECT STORY: 
+				$scope.selectStory = function(obj){
+					console.log('select ouch');
+					console.log(obj);
+
+					$scope.selectedStory = obj; 
+				}
+		//EDIT STORY: 
+					$scope.editProfileFunc = function(){
+						console.log('poof edit');
+						console.log($scope.selectedStory);
+						var tempObj = $scope.selectedStory;
+
+						Stories.editProfile($scope.selectedStory).then(function(res, err){
+							if (err){console.log('edit error');}
+							else {console.log(res);}
+
+							Stories.getAllProfiles().then(function(response){
+								$scope.stories = response.data;
+							});
+						});
+					}
+
+
 
 
 });
