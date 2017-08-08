@@ -18,9 +18,9 @@ var URL = 'https://gentle-shore-39524.herokuapp.com';
 			return $http.post(URL + '/delete-story', delProf)
 		}, 
 //EDIT A PROFILE
-		// editProfile    : function(tempObj){
-		// 	return $http.post(URL + '/edit-story', tempObj)
-		// }
+		editProfile    : function(tempObj){
+			return $http.post(URL + '/edit-story', tempObj)
+		}
 
 		   }
 

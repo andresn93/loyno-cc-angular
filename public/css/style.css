@@ -40,6 +40,12 @@ h1 {
 		height: 100px;
 	}
 
+	.user-picture {
+		background-image: url('');
+		width: 100px;
+		height: 100px;
+	}
+
 	/* END PROFILES */
 
 	/* ADD PROFILE SECTION */
