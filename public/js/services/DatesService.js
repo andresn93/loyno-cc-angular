@@ -20,9 +20,9 @@ var URL = 'https://gentle-shore-39524.herokuapp.com';
 			return $http.post(URL + '/application-allowed', unavObj);
 		},
 
-		// editDates : function(data){
-		// 	return $http.post(URL + '/edit-course', data);
-		// }
+		editDates : function(data){
+			return $http.post(URL + '/edit-course', data);
+		}
 
 
 		   }
