@@ -6,8 +6,16 @@
 				<div>{{x.start}}</div>
 				<div>{{x.end}}</div>
 				<div>{{x.details}}</div>
-					<button type="button" class="btn btn-default" ng-click="delCourseFunc()">
+				<!-- shows if course is available -->
+				<div ng-show="x.available == true">application open</div>
+				<div ng-show="x.available == false">application closed</div>
+
+					<button type="button" class="btn btn-default" ng-click="delCourseFunc(x)">
 						<span class="glyphicon glyphicon-trash"></span>
+					</button>
+					<!-- this button changes from available to unavailable -->
+					<button type="button" class="btn btn-default" ng-click="changeAvailable(x)">
+						<span class="glyphicon glyphicon-eye-open"></span>
 					</button>
 			</div>
 	

@@ -14,6 +14,9 @@ var URL = 'https://gentle-shore-39524.herokuapp.com';
 
 		deleteDates  : function(delDat){
 			return $http.post(URL + '/delete-course', delDat);
+		},
+		editDates : function(data){
+			return $http.post(URL + '/edit-course', data);
 		}
 
 
