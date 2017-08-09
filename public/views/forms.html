@@ -1,0 +1,21 @@
+<!-- EXISTING FORMS POPULATE-->
+	<div class="container populate-container col-xs-6">
+		<h2>EDIT/DELETE EXISTING FORMS</h2>
+
+			<div class="container form-container" ng-repeat="x in forms">
+
+				<div>{{x.field}}</div> <!-- NEED TO REPLACE 'field' FOR VARIABLE -->
+				<div>{{x.field}}</div>
+				<div>
+					<button type="button" class="btn btn-default" ng-click="deleteFormFunc(x._id)">
+						<span class="glyphicon glyphicon-trash"></span>
+					</button>
+
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm" ng-click="selectForm(x)">
+						<span class="glyphicon glyphicon-pencil"></span>
+					</button>
+
+				</div>
+			</div>
+	</div>
+<!-- END EXISTING FORMS -->

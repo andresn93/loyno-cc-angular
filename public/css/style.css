@@ -46,6 +46,13 @@ h1 {
 		height: 100px;
 	}
 
+/*	.profile-story {
+		width: 304px;
+		word-wrap: break-word;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}*/
+
 	/* END PROFILES */
 
 	/* ADD PROFILE SECTION */
